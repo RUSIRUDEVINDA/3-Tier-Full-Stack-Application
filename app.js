@@ -83,6 +83,7 @@ app.use(helmet({ contentSecurityPolicy: false }));
 const scriptSrcUrls = [
     "https://stackpath.bootstrapcdn.com/",
     "https://cdn.maptiler.com/",
+    "https://unpkg.com/",
     "https://api.maptiler.com/",
     "https://kit.fontawesome.com/",
     "https://cdnjs.cloudflare.com/",
@@ -93,6 +94,7 @@ const styleSrcUrls = [
     "https://stackpath.bootstrapcdn.com/",
     "https://api.maptiler.com/",
     "https://cdn.maptiler.com/",
+    "https://unpkg.com/",
     "https://fonts.googleapis.com/",
     "https://use.fontawesome.com/",
 ];
@@ -101,6 +103,9 @@ const connectSrcUrls = [
     "https://a.tiles.maptiler.com/",
     "https://b.tiles.maptiler.com/",
     "https://c.tiles.maptiler.com/",
+    "https://cdn.jsdelivr.net/",
+    "https://stackpath.bootstrapcdn.com/",
+    "https://unpkg.com/",
 ];
 const fontSrcUrls = [];
 
@@ -165,5 +170,4 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Serving on port ${port}`)
 })
-
 

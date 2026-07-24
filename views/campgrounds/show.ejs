@@ -55,7 +55,8 @@
 
         </div>
         <div class="col-6">
-            <div id='map'></div>
+            <div id="map" data-map-token="<%= process.env.MAPTILER_KEY %>"
+                data-campground="<%= JSON.stringify(campground) %>"></div>
 
             <% if(currentUser){ %>
                 <h2>Leave a Review</h2>
@@ -114,10 +115,5 @@
                         <% } %>
         </div>
     </div>
-
-    <script>
-        const mapToken = '<%-process.env.MAPTILER_KEY%>';
-        const campground = <% - JSON.stringify(campground) %> // importance note: vscode formater add space at this line of code is not valid, "/</%/-"", not "/</%/ /-"
-    </script>
 
     <script src="/javascripts/showPageMap.js"></script>

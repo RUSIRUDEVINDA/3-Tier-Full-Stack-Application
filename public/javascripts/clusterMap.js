@@ -1,7 +1,13 @@
 // this file is modificated ver from https://docs.maptiler.com/sdk-js/examples/cluster/ 
 
+const clusterMap = document.querySelector('#cluster-map');
+const mapToken = clusterMap.dataset.mapToken;
+const campgrounds = {
+    features: JSON.parse(clusterMap.dataset.campgrounds)
+};
+
 const map = new maplibregl.Map({
-    container: 'cluster-map',
+    container: clusterMap,
     style: 'https://api.maptiler.com/maps/streets/style.json?key=' + mapToken,
     center: [-103.59179687498357, 40.66995747013945],
     zoom: 3
@@ -128,4 +134,3 @@ map.on('load', function () {
         map.getCanvas().style.cursor = '';
     });
 });
-
