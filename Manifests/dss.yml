@@ -5,13 +5,12 @@ metadata:
   name: yelp-camp-secrets
 type: Opaque
 data:
-  CLOUDINARY_CLOUD_NAME: ZGlpMnJvenRw
-  CLOUDINARY_KEY: NzU3NjQzMjU3ODkxMzY0
-  CLOUDINARY_SECRET: SHpBeTdPU3VCZjJhSUFSUm5Fd0tIcEVtc01N
-  MAPTILER_KEY: <your-maptiler-key-here>
-  DB_URL: bW9uZ29kYitzcnY6Ly9qYWlzd2FsYWRpMjQ2OnNjN1ZHU3lkN2RRQ2NMeTFAY2x1c3RlcjAuaXE2bXV0aC5tb25nb2RiLm5ldC8/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9Q2x1c3RlcjA=
-  SECRET: ZGV2b3Bzc2hhY2s=
-
+  CLOUDINARY_CLOUD_NAME: b29xeHpycng=
+  CLOUDINARY_KEY: NjgxNTc5MzE0MTI3NDI2
+  CLOUDINARY_SECRET: NjdzOHFlcHZIT1ZFSl9EMm9zeThiWkZ1MWVj
+  MAPTILER_KEY: MjQyOVZEbHhRdTl2YVpIMTBicHk=
+  DB_URL: bW9uZ29kYitzcnY6Ly9ydXNpcnU6MTIzNEBjbHVzdGVyMC5sZnF5cnRyLm1vbmdvZGIubmV0L2Rldm9wcz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1DbHVzdGVyMA==
+  SECRET: ZGV2b3Bz
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -29,7 +28,7 @@ spec:
     spec:
       containers:
         - name: yelp-camp-container
-          image: adijaiswal/campa:latest
+          image: rusiru49devinda/campa:latest
           ports:
             - containerPort: 3000
           env:
