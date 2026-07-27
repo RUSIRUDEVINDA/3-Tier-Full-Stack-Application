@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
         - name: yelp-camp-container
-          image: rusiru49devinda/campa:latest
+          image: rusiru49devinda/camp:latest
           ports:
             - containerPort: 3000
           env:
