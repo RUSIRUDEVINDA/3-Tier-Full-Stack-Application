@@ -26,6 +26,7 @@ The application is based on a YelpCamp-style campground platform where users can
 - [DevSecOps Security](#devsecops-security)
 - [Kubernetes Deployment](#kubernetes-deployment)
 - [Command Reference](#command-reference)
+- [Notes](#notes)
 
 ## Project Overview
 
@@ -662,3 +663,4 @@ aws eks update-kubeconfig --region ap-southeast-1 --name EKS-1
 - Replace placeholder Kubernetes Secret values with valid base64-encoded values.
 - Add a `Jenkinsfile` to the repository if you want Jenkins to run this workflow directly from source control.
 - Add real automated tests before enforcing strict production quality gates.
+
